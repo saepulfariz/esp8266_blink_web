@@ -17,12 +17,12 @@ void handleRoot(){
 }
 
 void handleOn(){
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(LED_BUILTIN, LOW);
   server.send(200, "text/html", on_html);
 }
 
 void handleOff(){
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(LED_BUILTIN, HIGH);
   server.send(200, "text/html", off_html);
 }
 
